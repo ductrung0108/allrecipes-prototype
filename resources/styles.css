@@ -1,0 +1,250 @@
+.chatbot {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 30px; 
+  right: 30px; 
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.50rem rgb(48, 48, 48));
+}
+
+.chatbox {
+  position: fixed;
+  height: 600px;
+  bottom: 20px;
+  width: 380px;
+  right: 30px;
+  display: block;
+  z-index: 999;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 0 0.75rem rgb(48, 48, 48));
+  box-sizing: border-box;
+  margin-bottom: -80px;
+}
+
+.collapse-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  background-color: #D54215;
+  height: 30px;
+  border-radius: 15px 15px 0 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bot-title {
+  color: white;
+  font-size: 15px;
+}
+
+.collapse-button {
+ height: 15px;
+ width: 15px;
+ cursor: pointer;
+}
+
+.dialog-space {
+  padding: 8px;
+  height: 300px;
+  background-color: white;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.input-section {
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  border-top: 1px grey;
+  border-radius: 0 0 15px 15px;
+}
+
+.input-field {
+  font-size: 15px;
+  padding: 4px 8px 4px 8px;
+  font-family: "Gill Sans", sans-serif;
+  width: 300px;
+  max-height: 200px;
+  border-radius: 10px;
+  outline: grey;
+}
+
+.input-field:focus {
+  border-color: #D54215;
+  outline: none;
+}
+
+.send-button {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.ask-bubble {
+  box-sizing: border-box;
+  margin: 4px;
+  background-color: #D54215;
+  color: white;
+  padding: 4px 8px;
+  width: auto;
+  align-self: flex-end;
+  max-width: 320px;
+  word-wrap: break-word;
+  border-radius: 10px;
+  line-height: 1;
+  font-size: 17px;
+}
+
+.answer-bubble {
+  box-sizing: border-box;
+  margin: 4px;
+  background-color: #CCCCCC;
+  color: black;
+  padding: 4px 8px;
+  width: auto;
+  align-self: flex-start;
+  max-width: 320px;
+  word-wrap: break-word;
+  border-radius: 10px;
+  line-height: 1;
+  font-size: 17px;
+}
+
+.confirm-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+  gap: 10px;
+}
+
+.yes-button, .no-button {
+  font-size: 15px;
+  width: 60px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  height: 20px;
+  text-align: center;
+}
+
+.yes-button {
+  background-color: #D54215;
+}
+
+.no-button {
+  background-color: #555555;
+}
+
+.loading-container {
+  display: flex;
+  align-self: flex-start;
+  width: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+
+.loading-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 0 1px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 40%, 100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.version-switchbox {
+  width: 180px;
+  height: 150px;
+  border-radius: 15px;
+  border: solid #D54215;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 110px;
+  left: -200px;
+  overflow-wrap: break-word;
+  font-size: 15px;
+  line-height: 1.2;
+  padding: 5px;
+  text-align: center;
+  background-color: #D54215;
+  color: white;
+}
+
+.version-switchbox p {
+  margin-bottom: 2px;
+}
+
+.version-switchbox button {
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 30px;
+  border-radius: 20px;
+  margin: 3px;
+  border: none;
+  font-size: 15px;
+}
+
+.exit-button {
+  background-color: black;
+  color: white;
+}
+
+.modified-recipe {
+  margin-top: 10px;
+  border: solid #D54215;
+  border-radius: 20px;
+  box-shadow:  0 0.75rem #D54215
+}
+
+.modified-button {
+  background-color: #E7AB46;
+}
+
+.signpost {
+  position: fixed;
+  height: 55px;
+  width: 265px;
+  bottom: 90px;
+  right: 140px;
+  z-index: 997; 
+  filter: drop-shadow(0 0 0.50rem rgb(48, 48, 48));
+}
+
+.cancel_signpost {
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  bottom: 126px;
+  right: 390px;
+  z-index: 998;
+  filter: drop-shadow(0 0 0.50rem rgb(48, 48, 48));
+}
+
+.cancel_signpost:hover {
+  cursor: pointer;
+}

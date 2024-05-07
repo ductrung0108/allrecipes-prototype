@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Allrecipes-extension",
+  "description": "This extension serves as the prototype for Allrecipes' AI chatbot",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "css": ["resources/styles.css"],
+      "matches": [
+        "https://www.allrecipes.com/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "/resources/chatbot.png", "/resources/close.png", "/resources/send.png", "/resources/dialogs.json", "/resources/newTable.html", "/resources/signpost.png", "/resources/cancel_signpost.png" ], 
+      "matches": [ "https://www.allrecipes.com/*" ]
+    }
+  ]
+}
+
+
+
+
+
