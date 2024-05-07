@@ -136,6 +136,7 @@ function sendMessage(from, e) {
             for (let i = 0; i <= 12; i++) {
               console.log("List Item:", listItems[i]);
               const span = listItems[i].querySelector('p').querySelector('span');
+              console.log(span); console.log(original_quantities);
               span.innerHTML = original_quantities[i];
               span.style = "color: black";
             }
@@ -300,7 +301,7 @@ collapseButton.classList.add('collapse-button');
 collapseButton.src = chrome.runtime.getURL("/resources/close.png");
 collapseButton.addEventListener('click', () => {
   chatboxState = !chatboxState;
-  body.removeChild(chatbox);
+  chatbox.remove();
 });
 
 const botTitle = document.createElement('h1');
